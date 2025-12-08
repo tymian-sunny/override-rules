@@ -232,6 +232,16 @@ const ruleProviders = {
 }
 
 const baseRules = [
+    // 所有系统服务直连
+    `PROCESS-NAME,svchost.exe,${PROXY_GROUPS.DIRECT}`,
+    // Edge 浏览器直连
+    `PROCESS-NAME,msedge.exe,${PROXY_GROUPS.DIRECT}`,
+    // win自动更新服务域名
+    `DOMAIN,b.c2r.ts.cdn.office.net,${PROXY_GROUPS.DIRECT}`,
+    // Office 正版 CDN
+    `DOMAIN-SUFFIX,officecdn.microsoft.com,${PROXY_GROUPS.DIRECT}`,
+    `DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net,${PROXY_GROUPS.DIRECT}`,
+    
     `RULE-SET,ADBlock,广告拦截`,
     `RULE-SET,AdditionalFilter,广告拦截`,
     `RULE-SET,SogouInput,搜狗输入法`,

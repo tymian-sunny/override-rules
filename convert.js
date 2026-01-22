@@ -232,51 +232,51 @@ const ruleProviders = {
 }
 
 const baseRules = [
-    // // 所有系统服务直连
-    // `PROCESS-NAME,svchost.exe,${PROXY_GROUPS.DIRECT}`,
-    // // Edge 浏览器直连
-    // `PROCESS-NAME,msedge.exe,${PROXY_GROUPS.DIRECT}`,
-    // // win自动更新服务域名
-    // // `DOMAIN,b.c2r.ts.cdn.office.net,${PROXY_GROUPS.DIRECT}`,
-    // // Office 正版 CDN
-    // `DOMAIN-SUFFIX,officecdn.microsoft.com,${PROXY_GROUPS.DIRECT}`,
-    // `DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net,${PROXY_GROUPS.DIRECT}`,
+    // 所有系统服务直连
+    `PROCESS-NAME,svchost.exe,${PROXY_GROUPS.DIRECT}`,
+    // Edge 浏览器直连
+    `PROCESS-NAME,msedge.exe,${PROXY_GROUPS.DIRECT}`,
+    // win自动更新服务域名
+    // `DOMAIN,b.c2r.ts.cdn.office.net,${PROXY_GROUPS.DIRECT}`,
+    // Office 正版 CDN
+    `DOMAIN-SUFFIX,officecdn.microsoft.com,${PROXY_GROUPS.DIRECT}`,
+    `DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net,${PROXY_GROUPS.DIRECT}`,
 
-    // // PS联网控制
-    // `DOMAIN-KEYWORD,adobe,REJECT`,
+    // PS联网控制
+    `DOMAIN-KEYWORD,adobe,REJECT`,
     
-    // `RULE-SET,ADBlock,广告拦截`,
-    // `RULE-SET,AdditionalFilter,广告拦截`,
-    // `RULE-SET,SogouInput,搜狗输入法`,
-    // `DOMAIN-SUFFIX,truthsocial.com,Truth Social`,
-    // `RULE-SET,StaticResources,静态资源`,
-    // `RULE-SET,CDNResources,静态资源`,
-    // `RULE-SET,AdditionalCDNResources,静态资源`,
-    // `RULE-SET,Crypto,Crypto`,
-    // `RULE-SET,EHentai,E-Hentai`,
-    // `RULE-SET,TikTok,TikTok`,
-    // `RULE-SET,SteamFix,${PROXY_GROUPS.DIRECT}`,
-    // `RULE-SET,GoogleFCM,${PROXY_GROUPS.DIRECT}`,
-    // `DOMAIN,services.googleapis.cn,${PROXY_GROUPS.SELECT}`,
-    // `GEOSITE,GOOGLE-PLAY@CN,${PROXY_GROUPS.DIRECT}`,
-    // "GEOSITE,CATEGORY-AI-!CN,AI",
-    // "GEOSITE,TELEGRAM,Telegram",
-    // "GEOSITE,YOUTUBE,YouTube",
-    // "GEOSITE,NETFLIX,Netflix",
-    // "GEOSITE,SPOTIFY,Spotify",
-    // "GEOSITE,BAHAMUT,Bahamut",
-    // "GEOSITE,BILIBILI,Bilibili",
-    // `GEOSITE,MICROSOFT@CN,${PROXY_GROUPS.DIRECT}`,
-    // "GEOSITE,PIKPAK,PikPak",
-    // `GEOSITE,GFW,${PROXY_GROUPS.SELECT}`,
-    // `GEOSITE,CN,${PROXY_GROUPS.DIRECT}`,
-    // `GEOSITE,PRIVATE,${PROXY_GROUPS.DIRECT}`,
-    // "GEOIP,NETFLIX,Netflix,no-resolve",
-    // "GEOIP,TELEGRAM,Telegram,no-resolve",
-    // `GEOIP,CN,${PROXY_GROUPS.DIRECT}`,
-    // `GEOIP,PRIVATE,${PROXY_GROUPS.DIRECT}`,
-    // "DST-PORT,22,SSH(22端口)",
-    // `MATCH,${PROXY_GROUPS.SELECT}`
+    `RULE-SET,ADBlock,广告拦截`,
+    `RULE-SET,AdditionalFilter,广告拦截`,
+    `RULE-SET,SogouInput,搜狗输入法`,
+    `DOMAIN-SUFFIX,truthsocial.com,Truth Social`,
+    `RULE-SET,StaticResources,静态资源`,
+    `RULE-SET,CDNResources,静态资源`,
+    `RULE-SET,AdditionalCDNResources,静态资源`,
+    `RULE-SET,Crypto,Crypto`,
+    `RULE-SET,EHentai,E-Hentai`,
+    `RULE-SET,TikTok,TikTok`,
+    `RULE-SET,SteamFix,${PROXY_GROUPS.DIRECT}`,
+    `RULE-SET,GoogleFCM,${PROXY_GROUPS.DIRECT}`,
+    `DOMAIN,services.googleapis.cn,${PROXY_GROUPS.SELECT}`,
+    `GEOSITE,GOOGLE-PLAY@CN,${PROXY_GROUPS.DIRECT}`,
+    "GEOSITE,CATEGORY-AI-!CN,AI",
+    "GEOSITE,TELEGRAM,Telegram",
+    "GEOSITE,YOUTUBE,YouTube",
+    "GEOSITE,NETFLIX,Netflix",
+    "GEOSITE,SPOTIFY,Spotify",
+    "GEOSITE,BAHAMUT,Bahamut",
+    "GEOSITE,BILIBILI,Bilibili",
+    `GEOSITE,MICROSOFT@CN,${PROXY_GROUPS.DIRECT}`,
+    "GEOSITE,PIKPAK,PikPak",
+    `GEOSITE,GFW,${PROXY_GROUPS.SELECT}`,
+    `GEOSITE,CN,${PROXY_GROUPS.DIRECT}`,
+    `GEOSITE,PRIVATE,${PROXY_GROUPS.DIRECT}`,
+    "GEOIP,NETFLIX,Netflix,no-resolve",
+    "GEOIP,TELEGRAM,Telegram,no-resolve",
+    `GEOIP,CN,${PROXY_GROUPS.DIRECT}`,
+    `GEOIP,PRIVATE,${PROXY_GROUPS.DIRECT}`,
+    "DST-PORT,22,SSH(22端口)",
+    `MATCH,${PROXY_GROUPS.SELECT}`
 ];
 
 function buildRules({ quicEnabled }) {

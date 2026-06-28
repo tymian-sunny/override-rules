@@ -243,7 +243,7 @@ const baseRules = [
     `DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net,${PROXY_GROUPS.DIRECT}`,
 
     // 给.home.arpa添加直连规则
-    `DOMAN-SUFFIX,home.arpa,${PROXY_GROUPS.DIRECT}`,
+    `DOMAIN-SUFFIX,home.arpa,${PROXY_GROUPS.DIRECT}`,
     
     // PS联网控制
     `DOMAIN-KEYWORD,adobe,REJECT`,
